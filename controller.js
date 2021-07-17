@@ -35,7 +35,7 @@ exports.signup = async(req,res,next) => {
         
         const z = await transport.sendMail(msg,async function(err,data) {
             if(err) { 
-                res.json({message:'no'})
+                return res.json({message:'no'})
              }
              else {
                 const u = await user.create({

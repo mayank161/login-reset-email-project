@@ -52,8 +52,8 @@
                 password: password
             });
             console.log(data)
-            if(data.data.message == 'no') { alert('please provide valid email id')}
-            if(data.data.message == 401) { alert("user already exist")}
+            if(data.data.message == 'no') { return alert('please provide valid email id')}
+            if(data.data.message == 401) { return alert("user already exist")}
             localStorage.setItem("token",data.data.token)
             document.body.innerHTML = '<h1> you are logged in </h1>'
         }

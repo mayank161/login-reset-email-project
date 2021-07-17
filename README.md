@@ -25,3 +25,5 @@
 10. then enter new password and paswoord changes with the help of hash runtime token
 <img src="img/8.PNG">
 <img src="img/9.PNG">
+
+11. and when you start your page again then you are already logged in by jwt authentication
